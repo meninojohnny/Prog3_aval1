@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
 
-
 * {
   margin: 0px;
   padding: 0px;
@@ -18,14 +17,12 @@ body {
 }
 
 header {
-  height: 20vw;
   padding: 20px;
   background-color: rgb(13, 19, 33);
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
 
 .logo {
   width: 15%;
@@ -44,7 +41,6 @@ header {
   text-decoration: none;
   color: white;
   padding: 10px;
-  /* background-color: rgb(62, 92, 118); */
   border-radius: 30px;
 }
 
@@ -78,13 +74,15 @@ nav {
   padding: 10px;
   background-color: rgb(13, 19, 33);
   color: white;
-  box-shadow: .1px .1px 3px black;
+  box-shadow: 0.1px 0.1px 3px black;
   width: 33%;
   text-align: center;
   text-decoration: none;
 }
 
-#prato:hover, #bebida:hover, #sobremesa:hover {
+#prato:hover,
+#bebida:hover,
+#sobremesa:hover {
   transform: translate(-1px, -1px);
 }
 
@@ -102,7 +100,7 @@ nav {
   margin-bottom: 10px;
   color: white;
   border-radius: 10px;
-  box-shadow: .1px .1px 3px black;
+  box-shadow: 0.1px 0.1px 3px black;
 }
 
 .item:hover {
@@ -117,31 +115,8 @@ nav {
   background-color: white;
 }
 
-#imagemItem {
-  height: 300px;
-  background-color: cadetblue;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#imagemItem, #nomeItem, #promocao, #precoItem {
-  margin-bottom: 10px;
-}
-
-#promocao {
-  background-color: green;
-  display: inline-block;
-  padding: 8px;
-  border-radius: 5px;
-  font-size: .5em;
-  color: white
-}
-
-.itemDetalheSection {
-  padding: 10px;
-}
-
 .sobre {
+  height: 100vh;
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -155,7 +130,7 @@ nav {
 
 .sobre p {
   padding-bottom: 10px;
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: 100;
   max-width: 500px;
 }
@@ -166,17 +141,18 @@ nav {
 }
 
 .contato {
+  height: 100vw;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.contato h2{
+.contato h2 {
   margin-bottom: 10px;
 }
 
 .contato a {
-  font-size: .8em;
+  font-size: 0.8em;
   text-decoration: none;
   color: black;
 }
@@ -205,4 +181,24 @@ footer {
   background-color: rgb(13, 19, 33);
   color: white;
   text-align: center;
+}
+
+@media (max-width: 400px) {
+  header {
+    flex-direction: column;
+    height: 35vw;
+  }
+
+  #prato, #bebida, #sobremesa {
+    font-size: 1em;
+  }
+
+  .item {
+    width: 43vw;
+  }
+
+  .foto {
+    width: 100%;
+  }
+
 }
