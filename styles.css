@@ -14,7 +14,9 @@
 body {
   height: 100vh;
   box-sizing: border-box;
-  background-color: rgb(240, 235, 216);
+  /* background-color: rgb(240, 235, 216); */
+  background-image: linear-gradient(to left,rgb(240, 235, 216), rgba(130, 127, 115, 0.711) );
+  background-attachment: fixed;
 }
 
 header {
